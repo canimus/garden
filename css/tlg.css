@@ -19,7 +19,6 @@ body {
 
 #base_layer {
   background: black;
-  min-height: 600px;
 }
 
 footer {
@@ -63,17 +62,23 @@ footer {
   background-color: black;
   background-image: url('../img/header_1.jpg');
   background-repeat: no-repeat;
-  min-height: 608px;
+}
+
+#hero-holder {
+  margin-top: 300px;
 }
 .hero-unit {
   background: transparent !important;
   color: white;
+  padding: 10px 40px !important;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 .hero-unit h2 {
   font-family: 'News Cycle';
   font-size: 52px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #f8faea;
 }
 
