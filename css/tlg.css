@@ -71,7 +71,7 @@ footer {
 .hero-unit {
   background: transparent !important;
   color: white;
-  margin-top: 100px;
+  margin-top: 360px;
   padding: 0;
 }
 
@@ -89,8 +89,8 @@ footer {
 }
 
 .call_action {
-  padding: 10px 20px;
-  background: #877e77 !important;
-  opacity: .8;
+  padding: 20px 30px;
+  background: rgba(115, 99, 86, .8) !important;
   border-radius: none !important;
 }
+
