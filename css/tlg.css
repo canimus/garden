@@ -60,10 +60,23 @@ footer {
 }
 
 #image_holder {
+  background-color: black;
   background-image: url('../img/header_1.jpg');
   background-repeat: no-repeat;
   min-height: 608px;
-  z-index: -1;
-  
+}
+.hero-unit {
+  background: transparent !important;
+  color: white;
 }
 
+.hero-unit h2 {
+  font-family: 'News Cycle';
+  font-size: 52px;
+  margin-bottom: 30px;
+  color: #f8faea;
+}
+
+.hero-unit p {
+  color: #f8faea;
+}
