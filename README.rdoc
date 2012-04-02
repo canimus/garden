@@ -1,0 +1,3 @@
+== Front End Design for Light Garden<
+
+This project contains the front end design for the light garden website
