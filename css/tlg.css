@@ -60,28 +60,37 @@ footer {
 
 #image_holder {
   background-color: black;
-  background-image: url('../img/header_1.jpg');
-  background-repeat: no-repeat;
 }
 
-#hero-holder {
-  margin-top: 300px;
+#image_holder .row {
+  background-image: url('../img/header_1.jpg');
+  background-repeat: no-repeat;
+  min-height: 608px;
 }
+
 .hero-unit {
   background: transparent !important;
   color: white;
-  padding: 10px 40px !important;
-  margin-left: 40px;
-  margin-top: 10px;
+  margin-top: 100px;
+  padding: 0;
 }
 
 .hero-unit h2 {
   font-family: 'News Cycle';
-  font-size: 52px;
+  font-size: 42px;
   margin-bottom: 20px;
   color: #f8faea;
 }
 
 .hero-unit p {
   color: #f8faea;
+  line-height: 22px;
+  font-size: 1.2em;
+}
+
+.call_action {
+  padding: 10px 20px;
+  background: #877e77 !important;
+  opacity: .8;
+  border-radius: none !important;
 }
