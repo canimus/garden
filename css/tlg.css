@@ -62,10 +62,35 @@ footer {
   background-color: black;
 }
 
-#image_holder .row {
-  background-image: url('../img/header_1.jpg');
+.image_css {
   background-repeat: no-repeat;
   min-height: 608px;
+}
+
+.image_1 {
+  background-image: url('../img/header_1.jpg');
+}
+.image_2 {
+  background-image: url('../img/header_2.jpg');
+}
+
+.image_21 {
+  opacity: 0;
+}
+
+
+.image_3 {
+  background-image: url('../img/header_3.jpg');
+}
+
+#back_image {
+  position: relative;
+}
+
+#above_div {
+  position: absolute;
+  position:absolute;
+  top:0;
 }
 
 .hero-unit {

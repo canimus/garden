@@ -7,71 +7,99 @@
   <link rel="stylesheet" href="css/tlg.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-	<title>Home: The Light Garden, Nature Illuminated</title>
+  <title>Home: The Light Garden, Nature Illuminated</title>
 </head>
 <body>
-<header>
-  <div id="logo">
-    <div class="container">
-      <div class="row">
-        <div class="span4">
-          image
-        </div>
-        <div class="span8">
-          <ul id="menu_bar" class="nav nav-pills">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="empty_menu">&nbsp;</li>
-            <li><a href="#">Products</a></li>
-            <li class="empty_menu">&nbsp;</li>
-            <li><a href="#">Shows</a></li>
-            <li class="empty_menu">&nbsp;</li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<div id="image_holder">
-  <div class="container">
-    <div class="row">
-      <div class="span6">
-        <div class="hero-unit" style="">
-          <h1>Welcome to</h1>
-          <h2>The Light Garden</h2>
-          <p>
-            We offer the country's largest and most diverse collection
-            of illuminated floral design products and accesories. Our
-            florar innovations are revolutionazing the concept and style
-            of interior lighting.
-          </p>
-        </div>
-      </div>
-      
-      <div class="span6">
-        <div class="hero-unit call_action" style="">
-          <p style="margin-bottom: 20px">
-            A variety of unique designs transform the ordinary silk flower
-            and cast an enchanting, ambient,glow on any setting. From vibrant
-            orchids and plum tree flowers to earth-toned willow branches offset by sparkling
-            crystals, this collection offers something to accent every décor.
-            <br/>
-          </p>
-          <div>
-          <button class="btn">View our video &nbsp;<i class="icon-film"></i></button>
-          <button class="btn pull-right">Download Catalog &nbsp;<i class="icon-download-alt"></i></button>
+  <header>
+    <div id="logo">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            image
+          </div>
+          <div class="span8">
+            <ul id="menu_bar" class="nav nav-pills">
+              <li class="active"><a href="#">Home</a></li>
+              <li class="empty_menu">&nbsp;</li>
+              <li><a href="#">Products</a></li>
+              <li class="empty_menu">&nbsp;</li>
+              <li><a href="#">Shows</a></li>
+              <li class="empty_menu">&nbsp;</li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+  </header>
 
+  <div id="image_holder">
+    <div class="container">
+      <div class="row">
+        <div id="back_image" class="image_css image_1"></div>
+        <div id="above_div"> <!-- Above div -->
+
+          <div class="span6">
+            <div class="hero-unit" style="">
+              <h1>Welcome to</h1>
+              <h2>The Light Garden</h2>
+              <p>
+                We offer the country's largest and most diverse collection
+                of illuminated floral design products and accesories. Our
+                florar innovations are revolutionazing the concept and style
+                of interior lighting.
+              </p>
+            </div>
+          </div>
+
+          <div class="span6">
+            <div class="hero-unit call_action" style="">
+              <p style="margin-bottom: 20px">
+                A variety of unique designs transform the ordinary silk flower
+                and cast an enchanting, ambient,glow on any setting. From vibrant
+                orchids and plum tree flowers to earth-toned willow branches offset by sparkling
+                crystals, this collection offers something to accent every décor.
+                <br/>
+              </p>
+              <div>
+                <button class="btn">View our video &nbsp;<i class="icon-film"></i></button>
+                <button class="btn pull-right">Download Catalog &nbsp;<i class="icon-download-alt"></i></button>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- Above div -->
+        
+      </div>
     </div>
   </div>
-</div>
 
-<footer>
-  <p>Footer information</p>
-</footer>
+  <footer>
+    <p>Footer information</p>
+  </footer>
+  <script>
+    
+    
+    $(document).ready(function() {
+      console.log("ready");
+      
+      var imgs = [            
+      'red',
+      'blue',
+      'green'];
+      var cnt = imgs.length;
+
+      $(function() {
+          setInterval(Slider, 5000);
+      });
+
+      function Slider() {
+       
+       $("#back_image").fadeOut().switchClass("image_1", "image_2", 0).fadeIn(); 
+      }
+    });
+  </script>
 </body>
 </html>
