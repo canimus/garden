@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/tlg.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=News+Cycle|Maven+Pro:400,700' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
@@ -17,16 +17,15 @@
       <div class="container">
         <div class="row">
           <div class="span4">
-            image
+            <div id="fix_logo">
+              <img src="img/tlg.png" alt="Nature Illuminated" />
+            </div>
           </div>
           <div class="span8">
-            <ul id="menu_bar" class="nav nav-pills">
+            <ul id="menu_bar" class="nav nav-pills pull-right">
               <li class="active"><a href="#">Home</a></li>
-              <li class="empty_menu">&nbsp;</li>
               <li><a href="#">Products</a></li>
-              <li class="empty_menu">&nbsp;</li>
               <li><a href="#">Shows</a></li>
-              <li class="empty_menu">&nbsp;</li>
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
@@ -77,30 +76,55 @@
   </div>
 
   <footer>
-    <p>Footer information</p>
+    <div class="container" style="width:990px">
+      <div class="row">
+        <div class="span6" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 120px">
+          <h2 class="tlg-header">Featured Products</h2>
+          <small><a><i class="icon-th-list icon-white"></i> See all products </a></small>
+          <div>
+            <ul class="thumbnails">
+              <li class="span3">
+                <a href="#"><i class="icon-backward icon-white icon-tlg"></i></a>
+                <img src="http://placehold.it/200x140" alt="">
+              </li>
+               <li class="span3">
+                  <img src="http://placehold.it/200x140" alt="">
+                  <a href="#"><i class="icon-forward icon-white icon-tlg"></i></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span3" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 230px">
+          <h2 class="tlg-header">Monthly Specials</h2>
+          <small><a><i class="icon-gift icon-white"></i> More offers </a></small>
+        </div>
+        <div class="span3" style="margin-top: 20px; min-height: 230px">
+          <h2 class="tlg-header">Nature Illuminated</h2>
+          <small><a><i class="icon-leaf icon-white"></i> Our history </a></small>
+          <p class="tlg-history">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          </p>
+          <p class="tlg-history">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          </p>
+          <a href="#" class="btn btn-mini">Read More</a>
+        </div>
+      </div>
+    </div>
   </footer>
   <script>
-    
+    function Slider() {
+     $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
+       $("#back_image").delay(6000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
+         $("#back_image").delay(6000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
+           Slider();
+         });
+       });
+     });
+    }
     
     $(document).ready(function() {
-      console.log("ready");
-      
-    
-    Slider();
-    
-     
-
-      function Slider() {
-       $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
-         $("#back_image").delay(4000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
-           $("#back_image").delay(4000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
-             Slider();
-           });
-         });
-          
-       });
-       
-      }
+      Slider();
     });
   </script>
 </body>

@@ -1,6 +1,16 @@
 body {
   background: #77675a;
 }
+
+#fix_logo {
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width:124px;
+  height: 112px;
+  z-index:1000;
+}
+
 #logo {
   background: #958673; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -37,7 +47,7 @@ footer {
 }
 
 #menu_bar {
- margin-top: 20px 
+ margin-top: 20px;
 }
 
 .empty_menu {
@@ -60,6 +70,7 @@ footer {
 
 #image_holder {
   background-color: black;
+  position: relative;
 }
 
 .image_1 {
@@ -97,7 +108,7 @@ footer {
 .hero-unit {
   background: transparent !important;
   color: white;
-  margin-top: 440px;
+  margin-top: 350px;
   padding: 0;
 }
 
@@ -120,3 +131,36 @@ footer {
   border-radius: none !important;
 }
 
+.tlg-header {
+  font-family: 'News Cycle';
+  font-size: 22px;
+  color: #f8faea;
+  text-shadow: 0px 1px 0px #77675a;
+}
+
+footer small a, .tlg-link {
+  font-family: 'Helvetica Neue';
+  color: #f8faea;
+  text-shadow: 0px 1px 0px #77675a;
+  font-size: 13px !important;
+}
+
+footer small a:hover, .tlg-link:hover {
+  color: #dbd3c8 !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.thumbnails {
+  margin-top: 10px;
+}
+
+.icon-tlg {
+  opacity: .4 !important;
+}
+
+.tlg-history {
+  margin-top: 10px;
+  font-size: 13px;
+  color: white;
+}
