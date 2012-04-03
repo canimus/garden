@@ -62,16 +62,15 @@ footer {
   background-color: black;
 }
 
-.image_css {
+.image_1 {
+  background-image: url('../img/header_1.jpg');
   background-repeat: no-repeat;
   min-height: 608px;
 }
-
-.image_1 {
-  background-image: url('../img/header_1.jpg');
-}
 .image_2 {
   background-image: url('../img/header_2.jpg');
+  background-repeat: no-repeat;
+  min-height: 608px;
 }
 
 .image_21 {
@@ -81,6 +80,8 @@ footer {
 
 .image_3 {
   background-image: url('../img/header_3.jpg');
+  background-repeat: no-repeat;
+  min-height: 608px;
 }
 
 #back_image {
@@ -96,7 +97,7 @@ footer {
 .hero-unit {
   background: transparent !important;
   color: white;
-  margin-top: 360px;
+  margin-top: 440px;
   padding: 0;
 }
 

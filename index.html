@@ -38,7 +38,7 @@
   <div id="image_holder">
     <div class="container">
       <div class="row">
-        <div id="back_image" class="image_css image_1"></div>
+        <div id="back_image" class="image_1"></div>
         <div id="above_div"> <!-- Above div -->
 
           <div class="span6">
@@ -85,19 +85,21 @@
     $(document).ready(function() {
       console.log("ready");
       
-      var imgs = [            
-      'red',
-      'blue',
-      'green'];
-      var cnt = imgs.length;
-
-      $(function() {
-          setInterval(Slider, 5000);
-      });
+    
+    Slider();
+    
+     
 
       function Slider() {
+       $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
+         $("#back_image").delay(4000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
+           $("#back_image").delay(4000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
+             Slider();
+           });
+         });
+          
+       });
        
-       $("#back_image").fadeOut().switchClass("image_1", "image_2", 0).fadeIn(); 
       }
     });
   </script>
