@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/tlg.css" type="text/css" media="screen" title="no title" charset="utf-8">
-<link href='http://fonts.googleapis.com/css?family=News+Cycle|Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=News+Cycle|Maven+Pro:400,700' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/bootstrap-carousel.js" type="text/javascript" charset="utf-8"></script>
   <title>Home: The Light Garden, Nature Illuminated</title>
 </head>
 <body>
@@ -18,10 +22,10 @@
         <div class="row">
           <div class="span4">
             <div id="fix_logo">
-              <img src="img/tlg.png" alt="Nature Illuminated" />
+              <img src="img/tlg_simple.png" alt="Nature Illuminated" />
             </div>
           </div>
-          <div class="span8">
+          <div class="span10">
             <ul id="menu_bar" class="nav nav-pills pull-right">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Products</a></li>
@@ -78,28 +82,43 @@
   <footer>
     <div class="container" style="width:990px">
       <div class="row">
-        <div class="span6" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 120px">
+        <div class="span4" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 120px">
           <h2 class="tlg-header">Featured Products</h2>
           <small><a><i class="icon-th-list icon-white"></i> See all products </a></small>
-          <div>
-            <ul class="thumbnails">
-              <li class="span3">
-                <a href="#"><i class="icon-backward icon-white icon-tlg"></i></a>
-                <img src="http://placehold.it/200x140" alt="">
-              </li>
-               <li class="span3">
-                  <img src="http://placehold.it/200x140" alt="">
-                  <a href="#"><i class="icon-forward icon-white icon-tlg"></i></a>
-                </li>
-            </ul>
+          <div id="myCarousel" class="carousel" style="margin-right: 20px; margin-top: 10px">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <img src="img/im1.jpg">
+                <div class="carousel-caption">
+                <h4>Light Tree</h4>
+                <p>Perfect for weddings</p>
+                </div>
+              </div>
+              <div class="item"><img src="img/im2.jpg">
+                <div class="carousel-caption">
+                <h4>Flower Lamp</h4>
+                <p>Elegant interior decor</p>
+                </div>
+                </div>
+                 <div class="item"><img src="img/im3.jpg">
+                    <div class="carousel-caption">
+                    <h4>Cuper Candle</h4>
+                    <p>Soft ambient light</p>
+                    </div>
+                    </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
           </div>
         </div>
-        <div class="span3" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 230px">
+        <div class="span4" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 230px">
           <h2 class="tlg-header">Monthly Specials</h2>
           <small><a><i class="icon-gift icon-white"></i> More offers </a></small>
         </div>
-        <div class="span3" style="margin-top: 20px; min-height: 230px">
-          <h2 class="tlg-header">Nature Illuminated</h2>
+        <div class="span4" style="margin-top: 20px; min-height: 230px">
+          <h2 class="tlg-header">About Us</h2>
           <small><a><i class="icon-leaf icon-white"></i> Our history </a></small>
           <p class="tlg-history">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -125,6 +144,7 @@
     
     $(document).ready(function() {
       Slider();
+      $('.carousel').carousel('pause');
     });
   </script>
 </body>
