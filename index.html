@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="css/tlg.css" type="text/css" media="screen" title="no title" charset="utf-8">
-  <link href='http://fonts.googleapis.com/css?family=News+Cycle|Maven+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
   <script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
@@ -41,24 +41,24 @@
   <div id="image_holder">
     <div class="container" style="width: 1000px">
       <div class="row">
-        <div id="back_image" class="image_1"></div>
+        <div id="back_image"></div>
         <div id="above_div"> <!-- Above div -->
 
           <div class="span6">
-            <div class="hero-unit" style="">
+            <div class="hero-unit">
               <h1>Welcome to</h1>
               <h2>The Light Garden</h2>
               <p>
                 We offer the country's largest and most diverse collection
                 of illuminated floral design products and accesories. Our
-                florar innovations are revolutionazing the concept and style
+                floral innovations are revolutionazing the concept and style
                 of interior lighting.
               </p>
             </div>
           </div>
 
           <div class="span6">
-            <div class="hero-unit call_action" style="">
+            <div class="hero-unit call_action">
               <p style="margin-bottom: 20px">
                 A variety of unique designs transform the ordinary silk flower
                 and cast an enchanting, ambient,glow on any setting. From vibrant
@@ -67,14 +67,14 @@
                 <br/>
               </p>
               <div>
-                <img src="img/video-button.png" alt="" class=""/> 
-                <img src="img/catalog-button.png" alt="" class=""/>
+                <button class="btn-tlg">View our video<i class="icon-video"></i></button>
+                <button class="btn-tlg">Download Catalog<i class="icon-catalog"></i></button>
               </div>
             </div>
           </div>
-          
+
         </div> <!-- Above div -->
-        
+
       </div>
     </div>
   </div>
@@ -82,51 +82,54 @@
   <footer>
     <div class="container" style="width:990px">
       <div class="row">
-        <div class="span4" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 280px">
+        <div class="span4 car-container">
           <h2 class="tlg-header">Featured Products</h2>
           <small><a><i class="icon-th-list icon-white"></i> See all products </a></small>
-          <div id="myCarousel" class="carousel" style="margin-right: 20px; margin-top: 10px">
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-              <div class="active item">
-                <img src="img/im1.jpg">
-                <div class="carousel-caption">
-                <h4>Light Tree</h4>
-                <p>Perfect for weddings</p>
+          <div class="carousel-frame">
+            <div id="tlg-carousel" class="carousel">
+              <!-- Carousel items -->
+              <div class="carousel-inner">
+                <div class="active item">
+                  <img src="img/im1.jpg">
+                  <div class="carousel-caption">
+                    <h4>Light Tree</h4>
+                    <p>Perfect for weddings</p>
+                  </div>
                 </div>
-              </div>
-              <div class="item"><img src="img/im2.jpg">
-                <div class="carousel-caption">
-                <h4>Flower Lamp</h4>
-                <p>Elegant interior decor</p>
+                <div class="item"><img src="img/im2.jpg">
+                  <div class="carousel-caption">
+                    <h4>Flower Lamp</h4>
+                    <p>Elegant interior decor</p>
+                  </div>
                 </div>
-                </div>
-                 <div class="item"><img src="img/im3.jpg">
-                    <div class="carousel-caption">
+                <div class="item"><img src="img/im3.jpg">
+                  <div class="carousel-caption">
                     <h4>Cuper Candle</h4>
                     <p>Soft ambient light</p>
-                    </div>
-                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel nav -->
+              <a class="carousel-control left" href="#tlg-carousel" data-slide="prev">&lsaquo;</a>
+              <a class="carousel-control right" href="#tlg-carousel" data-slide="next">&rsaquo;</a>
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
           </div>
+          
         </div>
-        <div class="span4" style="border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 280px">
+        <div class="span4 car-container">
           <h2 class="tlg-header">Monthly Specials</h2>
           <small><a><i class="icon-gift icon-white"></i> More offers </a></small>
-          <p>
+          <p class="tlg-history" style="margin-right: 8px">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
           <p></p>
           <h2 class="tlg-header">Customer Reviews</h2>
-          <small><a><i class="icon-user icon-white"></i> Check our blog </a></small>
-          <blockquote style="margin-top: 10px; border-left: 3px solid #77675a !important; color: #f8faea">
-                  <p style="font-size: 13px; line-height: 16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
-                  <small style="color: #592d20; font-weight: bold">WallMart: <cite title="">James Harrison</cite></small>
-                </blockquote>
+          <small><a><i class="icon-user icon-white"></i> James Harrison</a></small>
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+            <small>WallMart</small>
+          </blockquote>
         </div>
         <div class="span4" style="margin-top: 20px; min-height: 230px">
           <h2 class="tlg-header">About Us</h2>
@@ -135,35 +138,71 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           </p>
           <p class="tlg-history">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           </p>
           <a href="#" class="btn btn-mini">Read More</a>
         </div>
       </div>
       <div class="row">
         <div class="span12">
-          <div class="green">
-            Aqui es el di
+          <div class="row green">
+            <div class="span2" style="border-right: 2px groove #8fa16d; height: 86px">
+              <h2 class="tlg-header">My Account</h2>
+              <a href="#" class="btn btn-mini">Forgotten password?</a>
+            </div>
+            <div class="span6" style="border-right: 2px groove #8fa16d; height: 86px">
+              <form action="/products" id="login-form" class="form-inline">
+                <div style="margin-right: 10px; display: inline-block">
+                  <label for="username">Email:</label><br/>
+                  <input type="text" name="username" value="" id="username" placeholder="" class="input-medium">  
+                </div>
+                <div style="display: inline-block">
+                  <label for="username">Password:</label><br/>
+                  <input type="password" name="password" value="" id="password" placeholder="" class="input-medium">
+                </div>
+                <div style="margin-left: 10px; display: inline-block">
+                  <button class="btn"> <i class="icon-lock"></i> Login</button>
+                </div>
+              </form>
+            </div>
+            <div class="span2"></div>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <script>
-    function Slider() {
-     $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
-       $("#back_image").delay(6000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
-         $("#back_image").delay(6000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
-           Slider();
-         });
-       });
-     });
+
+  var images = ["img/header_1.jpg", "img/header_2.jpg", "img/header_3.jpg"];
+  var image_counter = 0;
+
+  function Slider2(parameter) {
+    image_counter = ++image_counter % images.length
+    $("#back_image").animate({
+      opacity: 0
+    }, 2000, function() {
+      $("#back_image").css("background-image", "url('"+images[image_counter]+"')");
+      $("#back_image").animate({
+        opacity: 1
+        }, 1500);
+      });
     }
-    
+
+    function Slider() {
+      $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
+        $("#back_image").delay(6000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
+          $("#back_image").delay(6000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
+            //Slider();
+          });
+        });
+      });
+    }
+
     $(document).ready(function() {
-      Slider();
+      setInterval(Slider2, 6000);
+
       $('.carousel').carousel('pause');
     });
-  </script>
-</body>
-</html>
+    </script>
+  </body>
+  </html>

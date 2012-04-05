@@ -56,7 +56,7 @@ footer {
   background: -ms-linear-gradient(top,  #8c7d6a 0%,#77675a 100%); /* IE10+ */
   background: linear-gradient(top,  #8c7d6a 0%,#77675a 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c7d6a', endColorstr='#77675a',GradientType=0 ); /* IE6-8 */
-  min-height: 300px;
+  min-height: 450px;
   height: 100%;
 }
 
@@ -87,30 +87,11 @@ footer {
   position: relative;
 }
 
-.image_1 {
+#back_image {
+  position: relative;
   background-image: url('../img/header_1.jpg');
   background-repeat: no-repeat;
   min-height: 608px;
-}
-.image_2 {
-  background-image: url('../img/header_2.jpg');
-  background-repeat: no-repeat;
-  min-height: 608px;
-}
-
-.image_21 {
-  opacity: 0;
-}
-
-
-.image_3 {
-  background-image: url('../img/header_3.jpg');
-  background-repeat: no-repeat;
-  min-height: 608px;
-}
-
-#back_image {
-  position: relative;
 }
 
 #above_div {
@@ -127,10 +108,10 @@ footer {
 }
 
 .hero-unit h2 {
-  font-family: 'News Cycle';
+  font-family: 'Helvetica Neue';
   font-size: 42px;
   margin-bottom: 20px;
-  color: #f8faea;
+  color: white;
 }
 
 .hero-unit p {
@@ -146,7 +127,7 @@ footer {
 }
 
 .tlg-header {
-  font-family: 'News Cycle';
+  font-family: 'Helvetica Neue';
   font-size: 22px;
   color: #f8faea;
   text-shadow: 0px 1px 0px #77675a;
@@ -165,6 +146,18 @@ footer small a:hover, .tlg-link:hover {
   cursor: pointer;
 }
 
+#tlg-carousel {
+  width: 270px;
+}
+
+.carousel-frame {
+  border: 5px solid #77675a;
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 187px;
+  box-shadow: 1px 1px 4px #30261d;
+}
+
 ul.thumbnails {
   margin-top: 10px;
 }
@@ -176,7 +169,81 @@ ul.thumbnails {
 .tlg-history {
   margin-top: 10px;
   font-size: 13px;
-  color: white;
+  color: #f8faea;
+}
+
+blockquote {
+  margin-top: 10px; border-left: 3px solid #77675a !important; color: #f8faea;
+}
+
+blockquote p {
+  font-size: 13px; line-height: 16px;
+}
+
+blockquote small {
+  color: #592d20; font-weight: bold;
+}
+
+.car-container {
+  border-right: 2px groove rgba(172, 154, 132,.8); margin-top: 20px; min-height: 280px;
+}
+
+.btn-tlg {
+  background-color: #906547;
+  background-image: -moz-linear-gradient(top, #906547, #592d20);
+  background-image: -ms-linear-gradient(top, #906547, #592d20);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#906547), to(#592d20));
+  background-image: -webkit-linear-gradient(top, #906547, #592d20);
+  background-image: -o-linear-gradient(top, #906547, #592d20);
+  background-image: linear-gradient(top, #906547, #592d20);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#906547', endColorstr='#592d20', GradientType=0);
+  border-color: #592d20 #592d20 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  color: #f8faea;
+  text-shadow: 0px 1px 0px #77675a;
+  border-radius: 5px;
+  width: 200px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 32px;
+  opacity: .85;
+  outline: none;
+}
+
+.btn-tlg:hover {
+  opacity: 1;
+}
+
+.btn-tlg:first-child {
+  margin-right: 10px;
+}
+
+.icon-video {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  margin-top: -2px;
+  margin-left: 12px;
+  background-position: 0 0;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url('../img/icon_video.png');
+  background-repeat: no-repeat;
+}
+
+.icon-catalog {
+  display: inline-block;
+  width: 23px;
+  height: 20px;
+  margin-top: 1px;
+  margin-left: 8px;
+  background-position: 0 0;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url('../img/icon_download.png');
+  background-repeat: no-repeat;
 }
 
 .green {
@@ -191,9 +258,59 @@ ul.thumbnails {
   background: -ms-linear-gradient(top,  #759a2f 0%,#5e6e20 100%); /* IE10+ */
   background: linear-gradient(top,  #759a2f 0%,#5e6e20 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#759a2f', endColorstr='#5e6e20',GradientType=0 ); /* IE6-8 */
-  height: 80px;
+  height: 86px;
   border-radius: 5px;
   border-top: 1px solid #9fb86e;
   border-bottom: 1px solid #577323;
-  box-shadow: 1px 1px 5px #dbd3c8;
+  box-shadow: 1px 1px 5px #62564a;
+}
+
+.green .tlg-header {
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
+  color: #F5F6F2;
+  text-shadow: 0px 2px 0px #505F1C;
+  padding-top: 0px;
+  line-height: 22px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#login-form {
+  margin-top: 15px;
+}
+
+#login-form label {
+  margin-bottom: -10px;
+  color: white;
+}
+
+.brown {
+  margin-top: 20px;
+  background: #906547; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkwNjU0NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1OTJkMjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #906547 0%, #592d20 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#906547), color-stop(100%,#592d20)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #906547 0%,#592d20 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #906547 0%,#592d20 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #906547 0%,#592d20 100%); /* IE10+ */
+  background: linear-gradient(top,  #906547 0%,#592d20 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#906547', endColorstr='#592d20',GradientType=0 ); /* IE6-8 */
+  height: 86px;
+  border-radius: 5px;
+  border-top: 1px solid #826a63;
+  border-bottom: 1px solid #592d20;
+  box-shadow: 1px 1px 5px #462419;
+}
+
+.brown .tlg-header {
+  font-family: 'Helvetica Neue';
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 0px 1px 0px #77675a;
+  padding-top: 0px;
+  line-height: 22px;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
