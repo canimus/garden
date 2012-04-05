@@ -165,7 +165,10 @@
                 </div>
               </form>
             </div>
-            <div class="span2"></div>
+            <div class="span3" style="margin-left: 30px">
+              <h2 class="tlg-header">Not a member?</h2>
+              <a href="#" class="btn"> <i class="icon-plus-sign"></i> Register Now</a>
+            </div>
           </div>
         </div>
       </div>
@@ -176,7 +179,7 @@
   var images = ["img/header_1.jpg", "img/header_2.jpg", "img/header_3.jpg"];
   var image_counter = 0;
 
-  function Slider2(parameter) {
+  function Slider(parameter) {
     image_counter = ++image_counter % images.length
     $("#back_image").animate({
       opacity: 0
@@ -188,18 +191,8 @@
       });
     }
 
-    function Slider() {
-      $("#back_image").delay(4000).fadeOut(1000).switchClass("image_1", "image_2", 0).fadeIn(1000, function() {
-        $("#back_image").delay(6000).fadeOut(1000).switchClass("image_2", "image_3", 0).fadeIn(1000, function() {
-          $("#back_image").delay(6000).fadeOut(1000).switchClass("image_3", "image_1", 0).fadeIn(1000, function() {
-            //Slider();
-          });
-        });
-      });
-    }
-
     $(document).ready(function() {
-      setInterval(Slider2, 6000);
+      setInterval(Slider, 6000);
 
       $('.carousel').carousel('pause');
     });
