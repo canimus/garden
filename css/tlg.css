@@ -101,10 +101,10 @@ footer {
 }
 
 .hero-unit {
-  background: transparent !important;
+  background: rgba(55,55,55,.5) !important;
   color: white;
-  margin-top: 350px;
-  padding: 0;
+  margin-top: 320px;
+  padding: 15px 25px;
 }
 
 .hero-unit h2 {
@@ -263,6 +263,7 @@ blockquote small {
   border-top: 1px solid #9fb86e;
   border-bottom: 1px solid #577323;
   box-shadow: 1px 1px 5px #62564a;
+  behavior: url(PIE.htc);
 }
 
 .green .tlg-header {
@@ -302,6 +303,7 @@ blockquote small {
   border-top: 1px solid #826a63;
   border-bottom: 1px solid #592d20;
   box-shadow: 1px 1px 5px #462419;
+  behavior: url(PIE.htc);
 }
 
 .brown .tlg-header {
